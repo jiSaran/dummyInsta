@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/appPrimaryBlue"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            android:id="@+id/toolbar_collapse">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/main_toolbar"/>
+
+                <LinearLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:orientation="horizontal">
+                     <de.hdodenhof.circleimageview.CircleImageView
+                         android:layout_width="60dp"
+                         android:layout_height="60dp"
+                         android:layout_marginStart="15dp"
+                         xmlns:app="http://schemas.android.com/apk/res-auto"
+                         android:src="@drawable/img_feed_center_1"
+                         app:civ_border_width="2dp"/>
+
+                    <LinearLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:orientation="vertical"
+                          android:layout_marginStart="20dp">
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="@string/user"
+                             android:textSize="30sp"
+                             android:textColor="@color/appWhite"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="@string/userid"
+                             android:textColor="@color/lightbrown"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="@string/aboutinfo"
+                             android:textColor="@color/appWhite"/>
+                         <Button
+                             android:layout_marginTop="5dp"
+                             android:layout_width="230dp"
+                             android:layout_height="30dp"
+                             android:text="@string/following"
+                             android:background="@drawable/button"
+                             android:textColor="@color/appWhite"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                     android:layout_width="match_parent"
+                     android:layout_height="60dp"
+                     android:layout_marginTop="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginStart="40dp"
+                        android:id="@+id/postlayout">
+                        <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="@string/nopost"
+                             android:textColor="@color/appWhite"
+                             android:textSize="20sp"
+                             android:layout_gravity="center"/>
+                        <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="@string/post"
+                             android:textColor="@color/appWhite"
+                             android:layout_gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:orientation="vertical"
+                         android:layout_centerHorizontal="true">
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="@string/nofollower"
+                             android:textSize="20sp"
+                             android:textColor="@color/appWhite"
+                             android:layout_gravity="center"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="@string/follower"
+                             android:textColor="@color/appWhite"
+                             android:layout_gravity="center"/>
+                    </LinearLayout>
+                    <LinearLayout
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentEnd="true"
+                         android:orientation="vertical"
+                         android:layout_marginEnd="40dp">
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="@string/nofollowing"
+                             android:textSize="20sp"
+                             android:textColor="@color/appWhite"
+                             android:layout_gravity="center"/>
+                         <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="@string/followingsmall"
+                             android:textColor="@color/appWhite"
+                             android:layout_gravity="center"/>
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <android.support.design.widget.TabLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/appSecondaryBlue"
+                    android:id="@+id/tab_layout"
+                    android:elevation="10dp"></android.support.design.widget.TabLayout>
+
+            </LinearLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.v4.view.ViewPager
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:id="@+id/pager"></android.support.v4.view.ViewPager>
+
+
+    <include layout="@layout/floatbutton"/>
+
+</android.support.design.widget.CoordinatorLayout>

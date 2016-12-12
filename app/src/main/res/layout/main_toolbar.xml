@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+    android:background="#125688"
+    android:theme="@style/ThemeOverlay.AppCompat.Light"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_collapseMode="parallax"
+    app:contentInsetStart="0dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/tool_rel_lay">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:scaleType="fitCenter"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:background="@null"
+            android:src="@drawable/ic_menu_white"
+            android:id="@+id/menu_btn"/>
+        <ImageButton
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_toolbar_logo"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:id="@+id/logo_btn"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+
+            />
+        <ImageButton
+            android:layout_width="40dp"
+            android:id="@+id/directbtn"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_inbox_white"
+            android:background="@null"
+            android:scaleType="fitCenter"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            />
+    </RelativeLayout>
+
+</android.support.v7.widget.Toolbar>

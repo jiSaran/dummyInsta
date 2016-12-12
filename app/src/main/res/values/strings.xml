@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">DummyInsta</string>
+    <string name="user">User</string>
+    <string name="search">Search</string>
+    <string name="myfeed">My Feed</string>
+    <string name="menuicon">Menu icon</string>
+    <string name="gopro">Gopro</string>
+    <string name="likes">33 likes</string>
+    <string name="setting">Settings</string>
+    <string name="about">About</string>
+    <string name="instadirect">Instagram Direct</string>
+    <string name="news">News</string>
+    <string name="popular">Popular</string>
+    <string name="photosnearby">Photos Nearby</string>
+    <string name="photosyoulike">Photos You\'ve Liked</string>
+    <string name="userid">\@user</string>
+    <string name="aboutinfo">Mobile development passionate.</string>
+    <string name="following">Following</string>
+    <string name="nopost">1167</string>
+    <string name="post">posts</string>
+    <string name="nofollower">396</string>
+    <string name="follower">followers</string>
+    <string name="nofollowing">485</string>
+    <string name="followingsmall">following</string>
+    <string name="share">SHARE TO</string>
+    <string name="directcaps">DIRECT</string>
+    <string name="followercaps">FOLLOWERS</string>
+    <string name="addtophotomap">ADD TO PHOTO MAP</string>
+</resources>

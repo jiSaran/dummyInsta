@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.FloatingActionButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_inbox_white"
+    android:id="@+id/fab"
+    app:backgroundTint="#458eff"
+    android:layout_margin="16dp"
+    android:layout_gravity="bottom|end">
+
+</android.support.design.widget.FloatingActionButton>

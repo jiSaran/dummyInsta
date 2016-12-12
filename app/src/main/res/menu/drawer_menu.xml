@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/menu1">
+        <item
+            android:id="@+id/drawer_my_feed"
+            android:icon="@drawable/ic_global_menu_feed"
+            android:title="@string/myfeed"/>
+        <item
+            android:id="@+id/drawer_instadirect"
+            android:icon="@drawable/ic_global_menu_direct"
+            android:title="@string/instadirect"/>
+        <item android:title="@string/news"
+            android:icon="@drawable/ic_global_menu_news"
+            android:id="@+id/drawer_news"/>
+        <item android:id="@+id/drawer_popular"
+            android:icon="@drawable/ic_global_menu_popular"
+            android:title="@string/popular"/>
+        <item android:icon="@drawable/ic_global_menu_nearby"
+            android:id="@+id/drawer_nearby"
+            android:title="@string/photosnearby"/>
+        <item android:title="@string/photosyoulike"
+            android:icon="@drawable/ic_global_menu_likes"
+            android:id="@+id/drawer_likes"/>
+    </group>
+    <group android:id="@+id/menu2">
+        <item android:title="@string/setting"
+                android:id="@+id/drawer_setting"/>
+        <item android:title="@string/about"
+                android:id="@+id/drawer_about"/>
+    </group>
+</menu>
